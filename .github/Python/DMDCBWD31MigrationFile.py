@@ -29,7 +29,7 @@ DMDCBWD31MigrationFile —— 下载上传清单 → 逐文件 OBS 上传 → �
          见 OBSClient 模块说明）；
     4. 汇总上传成功的文件，一行一个写入本地临时 txt；
     5. 调用 GitHubCommitContent.commit_content_file 将该成功清单回传到远端
-       Branch/{BranchCurrent}/UploadSuccessList_yyyyMMdd_HHmmssSSS_{MD5}.txt
+       Branch/{BranchSuccess}/UploadSuccessList_yyyyMMdd_HHmmssSSS_{MD5}.txt
        （提交分支 = Commit.json 的 BranchMigration；MD5 为内容哈希、大写 hex）。
 
 配置来源
